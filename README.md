@@ -25,7 +25,7 @@ salt => 's3cret' # in Application.cfg
 
 ### Methods:
 
-  - registration - add new row into authorization table and return session id
+  - registration - add new row into authorization table and return session id (check right "authorization_add")
 
 ```
 my $session = $app->session->registration(['name-surname@mail.ru', 'login'], 'password');
@@ -43,7 +43,7 @@ my $session = $app->session->check_auth('name-surname@mail.ru', 'password'); # o
 my $key = $app->session->check_session($session);
 ```
 
-  - delete - delete row from authorization table
+  - delete - delete row from authorization table (check right "authorization_delete")
 
 ```
 $app->session->delete($key);
