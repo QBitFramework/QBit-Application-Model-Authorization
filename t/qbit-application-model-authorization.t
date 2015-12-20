@@ -11,18 +11,21 @@ my $app = TestApplication->new();
 
 $app->pre_run();
 
+my $tmp_rights = $app->add_tmp_rights(qw(authorization_add authorization_delete));
+
 my $error;
 try {
     $app->session;
 }
 catch {
     my ($exception) = @_;
-    
+
     $error = TRUE;
-    
-    is(ref($exception), 'Exception::Authorization', 'throw exception');
+
+    is(ref($exception),     'Exception::Authorization',    'throw exception');
     is($exception->message, gettext('Add salt in config'), 'Corrected error');
-} finally {
+}
+finally {
     ok($error, 'need salt');
 };
 
@@ -45,28 +48,32 @@ $app->session->delete('name-surname@mail.ru');
 $error = FALSE;
 try {
     $app->session->check_auth('name-surname@mail.ru', 'password');
-} catch {
+}
+catch {
     my ($exception) = @_;
-    
+
     $error = TRUE;
-    
+
     is(ref($exception), 'Exception::Authorization::NotFound', 'throw exception');
     is($exception->message, gettext('"%s" not found', 'name-surname@mail.ru'), 'Corrected error');
-} finally {
+}
+finally {
     ok($error, 'Error if not found auth');
 };
 
 $error = FALSE;
 try {
     $app->session->check_auth('login', 'drowssap');
-} catch {
+}
+catch {
     my ($exception) = @_;
-    
+
     $error = TRUE;
-    
-    is(ref($exception), 'Exception::Authorization::BadPassword', 'throw exception');
-    is($exception->message, gettext('Invalid password'), 'Corrected error');
-} finally {
+
+    is(ref($exception),     'Exception::Authorization::BadPassword', 'throw exception');
+    is($exception->message, gettext('Invalid password'),             'Corrected error');
+}
+finally {
     ok($error, 'Error if bad password');
 };
 
@@ -75,14 +82,16 @@ my $bad_session = $app->session->_get_session('login', '12345678');
 $error = FALSE;
 try {
     $app->session->check_session($bad_session);
-} catch {
+}
+catch {
     my ($exception) = @_;
-    
+
     $error = TRUE;
-    
-    is(ref($exception), 'Exception::Authorization::BadSession', 'throw exception');
-    is($exception->message, gettext('Invalid session'), 'Corrected error');
-} finally {
+
+    is(ref($exception),     'Exception::Authorization::BadSession', 'throw exception');
+    is($exception->message, gettext('Invalid session'),             'Corrected error');
+}
+finally {
     ok($error, 'Error if bad session');
 };
 
