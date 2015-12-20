@@ -27,6 +27,19 @@ my $SALT;
 
 __PACKAGE__->model_accessors(db => 'QBit::Application::Model::DB::Authorization');
 
+__PACKAGE__->register_rights(
+    [
+        {
+            name        => 'authorization',
+            description => sub {gettext('Rights for authorization')},
+            rights      => {
+                authorization_add    => d_gettext('Right to add new authorization record'),
+                authorization_delete => d_gettext('Right to delete authorization record'),
+            },
+        }
+    ]
+);
+
 sub init {
     my ($self) = @_;
 
@@ -35,6 +48,8 @@ sub init {
 
 sub registration {
     my ($self, $keys, $password) = @_;
+
+    throw Exception::Denied gettext('Access denied') unless $self->check_rights('authorization_add');
 
     $keys = [$keys] unless ref($keys) eq 'ARRAY';
 
@@ -56,6 +71,8 @@ sub registration {
 
 sub delete {
     my ($self, $key) = @_;
+
+    throw Exception::Denied gettext('Access denied') unless $self->check_rights('authorization_delete');
 
     $self->db->authorization->delete($key);
 }
@@ -129,7 +146,7 @@ sub process {
     my ($self, $cookie_name, $interval, $request, $response, $cb) = @_;
 
     my $session = $request->cookie($cookie_name);
-    
+
     return FALSE unless defined($session);
 
     my $key = $self->check_session($session);
@@ -137,7 +154,7 @@ sub process {
     $cb->($key);
 
     $response->add_cookie($cookie_name, $session, expires => $interval,);
-    
+
     return TRUE;
 }
 

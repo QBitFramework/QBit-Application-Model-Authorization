@@ -8,13 +8,19 @@ Simple model for authorization in QBit application.
 Install:
 
 ```
-dpk-apt get install libqbit-application-model-authorization
+dpk-apt get install libqbit-application-model-authorization-perl
 ```
 
 Require:
 
 ```
 use QBit::Application::Model::Authorization accessor => 'session'; # in Application.pm
+```
+
+Config:
+
+```
+salt => 's3cret' # in Application.cfg
 ```
 
 ### Methods:
@@ -28,8 +34,7 @@ my $session = $app->session->registration(['name-surname@mail.ru', 'login'], 'pa
   - check_auth - return session id
 
 ```
-my $session = $app->session->check_auth('name-surname@mail.ru', 'password');
-my $session = $app->session->check_auth('login', 'password');
+my $session = $app->session->check_auth('name-surname@mail.ru', 'password'); # or check_auth('login', 'password')
 ```
 
   - check_session - check session id and return key
