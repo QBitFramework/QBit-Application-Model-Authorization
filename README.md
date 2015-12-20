@@ -34,7 +34,8 @@ my $session = $app->session->registration(['name-surname@mail.ru', 'login'], 'pa
   - check_auth - return session id
 
 ```
-my $session = $app->session->check_auth('name-surname@mail.ru', 'password'); # or check_auth('login', 'password')
+my $session = $app->session->check_auth('name-surname@mail.ru', 'password');
+  # or check_auth('login', 'password')
 ```
 
   - check_session - check session id and return key
@@ -52,7 +53,7 @@ $app->session->delete($key);
   - process - combine all methods. (Expected cookie name where saved session, interval save session, Request, Response and call back function)
   
 ```
-sub pre_cmd {
+sub pre_cmd { # in WebInterface.pm
     my ($self, $controller) = @_;
     
     ...
