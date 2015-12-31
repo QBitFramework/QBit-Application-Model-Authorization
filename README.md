@@ -8,7 +8,7 @@ Simple model for authorization in QBit application.
 Install:
 
 ```
-dpk-apt get install libqbit-application-model-authorization-perl
+apt-get install libqbit-application-model-authorization-perl
 ```
 
 Require:
