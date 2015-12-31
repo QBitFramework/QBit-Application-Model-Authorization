@@ -11,8 +11,6 @@ my $app = TestApplication->new();
 
 $app->pre_run();
 
-my $tmp_rights = $app->add_tmp_rights(qw(authorization_add authorization_delete));
-
 my $error;
 try {
     $app->session;
