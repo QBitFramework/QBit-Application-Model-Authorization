@@ -1,3 +1,9 @@
+libqbit-application-model-authorization-perl (0.002) raring; urgency=low
+
+  * added in depends libtets-deep-perl
+
+ -- Igor Sverdlov <igor-sverdlov@mail.ru>  Thu, 31 Dec 2015 19:03:32 +0300
+
 libqbit-application-model-authorization-perl (0.001) raring; urgency=low
 
   * use lib::abs
