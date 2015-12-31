@@ -1,3 +1,9 @@
+libqbit-application-model-authorization-perl (0.003) raring; urgency=low
+
+  * added in depends blowfish
+
+ -- Igor Sverdlov <igor-sverdlov@mail.ru>  Thu, 31 Dec 2015 21:09:49 +0300
+
 libqbit-application-model-authorization-perl (0.002) raring; urgency=low
 
   * added in depends libtets-deep-perl
