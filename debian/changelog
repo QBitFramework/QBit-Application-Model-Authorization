@@ -1,5 +1,25 @@
 libqbit-application-model-authorization-perl (0.001) raring; urgency=low
 
+  * use lib::abs
+
+  * fix README.md
+
+  * deleted rights
+
+  * corrected README.md
+
+  * fix test
+
+  * added about rights into README.md
+
+  * added rights and fix README.md
+
+  * authorization
+
+ -- Igor Sverdlov <igor-sverdlov@mail.ru>  Thu, 31 Dec 2015 16:15:35 +0300
+
+libqbit-application-model-authorization-perl (0.001) raring; urgency=low
+
   * Initial commit
 
  -- Igor Sverdlov <igor-sverdlov@mail.ru>  Sat, 12 Dec 2015 14:06:53 +0400
