@@ -5,6 +5,8 @@ use Test::Deep;
 
 use qbit;
 
+use lib::abs qw(../lib ../t_lib);
+
 require_ok 'TestApplication';
 
 my $app = TestApplication->new();
