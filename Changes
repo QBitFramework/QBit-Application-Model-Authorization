@@ -1,0 +1,121 @@
+==================================================
+Changes from 2015-09-12 00:00:00 +0000 to present.
+==================================================
+
+------------------------------------------
+version 0.004 at 2016-09-11 13:19:29 +0000
+------------------------------------------
+
+  Change: d6a34b68c35a789f600659141c56cf2c8ba7fd86
+  Author: Igor <igor-sverdlov@mail.ru>
+  Date : 2016-09-11 17:18:47 +0000
+
+    Merge pull request #1 from QBitFramework/upload_to_cpan
+
+    upload to cpan 
+
+  Change: 5a1ec29d0ca0215c9cfcb080837628aa6307452d
+  Author: Igor Sverdlov <igor-sverdlov@mail.ru>
+  Date : 2016-09-11 16:17:44 +0000
+
+    upload to cpan 
+
+------------------------------------------
+version 0.003 at 2015-12-31 18:09:56 +0000
+------------------------------------------
+
+  Change: a28b6b718dcda097e8893d92d18f161ea574f6b9
+  Author: Igor Sverdlov <igor-sverdlov@mail.ru>
+  Date : 2015-12-31 21:09:56 +0000
+
+    Version 0.003 
+
+  Change: 0e7a8ea0b645da4f49f57cb6e18763f953e91608
+  Author: Igor Sverdlov <igor-sverdlov@mail.ru>
+  Date : 2015-12-31 21:08:31 +0000
+
+    added in depends blowfish 
+
+------------------------------------------
+version 0.002 at 2015-12-31 16:03:39 +0000
+------------------------------------------
+
+  Change: 703df39a84990d93ec1e791f8b09e66d7ab96a45
+  Author: Igor Sverdlov <igor-sverdlov@mail.ru>
+  Date : 2015-12-31 19:03:39 +0000
+
+    Version 0.002 
+
+  Change: f156e4125aae60b104bad2715597defece01b2d1
+  Author: Igor Sverdlov <igor-sverdlov@mail.ru>
+  Date : 2015-12-31 19:02:16 +0000
+
+    Merge remote-tracking branch 'origin/master' 
+
+  Change: 5d9747012eb6a85a1fd4e15fc6c9cbb96ed1f096
+  Author: Igor Sverdlov <igor-sverdlov@mail.ru>
+  Date : 2015-12-31 19:00:55 +0000
+
+    added in depends libtets-deep-perl 
+
+------------------------------------------
+version 0.001 at 2015-12-31 13:15:56 +0000
+------------------------------------------
+
+  Change: 2bce2de3cebbf6c23c450c6112413f9426176b7a
+  Author: Igor Sverdlov <igor-sverdlov@mail.ru>
+  Date : 2015-12-31 16:15:56 +0000
+
+    Version 0.001 
+
+  Change: 475427ab3bc6086ed88a43e5791816378a6c097b
+  Author: Igor Sverdlov <igor-sverdlov@mail.ru>
+  Date : 2015-12-31 16:14:32 +0000
+
+    use lib::abs 
+
+  Change: ae4e76811585f68a34e3437e334b59946b524b60
+  Author: Igor Sverdlov <igor-sverdlov@mail.ru>
+  Date : 2015-12-31 15:57:37 +0000
+
+    fix README.md 
+
+  Change: 91a638a02cda8e23ee2b65d9a7fcc0d2f791c062
+  Author: Igor Sverdlov <igor-sverdlov@mail.ru>
+  Date : 2015-12-31 15:51:36 +0000
+
+    deleted rights 
+
+  Change: 6ad9113079f7505cc9eb1cf95f46e42a0c29baa5
+  Author: Igor Sverdlov <igor-sverdlov@mail.ru>
+  Date : 2015-12-20 23:09:22 +0000
+
+    corrected README.md 
+
+  Change: 79aba2db6c62712721105683f123716bab22f651
+  Author: Igor Sverdlov <igor-sverdlov@mail.ru>
+  Date : 2015-12-20 23:06:46 +0000
+
+    fix test 
+
+  Change: c8a635d7d3dbf24e5d02359b73530d91663dd515
+  Author: Igor Sverdlov <igor-sverdlov@mail.ru>
+  Date : 2015-12-20 23:04:44 +0000
+
+    added about rights into README.md 
+
+  Change: 56118af4dd35f177d24cb3573329941f3e1529fd
+  Author: Igor Sverdlov <igor-sverdlov@mail.ru>
+  Date : 2015-12-20 22:59:48 +0000
+
+    added rights and fix README.md 
+
+  Change: f732ccae41c94ed85298fa4d2b08584bfe725f33
+  Author: Igor Sverdlov <igor-sverdlov@mail.ru>
+  Date : 2015-12-20 22:47:01 +0000
+
+    authorization 
+
+================
+End of releases.
+================
