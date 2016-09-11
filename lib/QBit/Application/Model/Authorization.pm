@@ -142,3 +142,33 @@ sub process {
 }
 
 TRUE;
+
+__END__
+
+=encoding utf8
+
+=head1 Name
+
+QBit::Application::Model::Authorization - Simple model for authorization in QBit application.
+
+=head1 GitHub
+
+https://github.com/QBitFramework/QBit-Application-Model-Authorization
+
+=head1 Install
+
+=over
+
+=item *
+
+cpanm QBit::Application::Model::Authorization
+
+=item *
+
+apt-get install libqbit-application-model-authorization-perl (http://perlhub.ru/)
+
+=back
+
+For more information. please, see code.
+
+=cut
