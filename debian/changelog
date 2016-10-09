@@ -1,3 +1,9 @@
+libqbit-application-model-authorization-perl (0.005) raring; urgency=low
+
+  * t_lib -> /t/lib
+
+ -- Igor Sverdlov <igor-sverdlov@mail.ru>  Sun, 09 Oct 2016 14:29:06 +0300
+
 libqbit-application-model-authorization-perl (0.004) raring; urgency=low
 
   * upload to cpan

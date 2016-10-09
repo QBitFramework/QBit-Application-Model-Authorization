@@ -25,11 +25,12 @@ my %WriteMakefileArgs = (
     "qbit" => 0
   },
   "TEST_REQUIRES" => {
+    "QBit::Application" => 0,
     "Test::Deep" => 0,
     "Test::More" => 0,
     "lib::abs" => 0
   },
-  "VERSION" => "0.004",
+  "VERSION" => "0.005",
   "test" => {
     "TESTS" => "t/*.t"
   }
@@ -40,6 +41,7 @@ my %FallbackPrereqs = (
   "Crypt::CBC" => 0,
   "Digest::SHA" => 0,
   "Exception" => 0,
+  "QBit::Application" => 0,
   "QBit::Application::Model" => 0,
   "QBit::Application::Model::DB" => 0,
   "Test::Deep" => 0,

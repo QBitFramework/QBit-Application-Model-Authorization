@@ -3,6 +3,7 @@ abstract: 'Simple model for authorization in QBit application.'
 author:
   - 'Igor Sverdlov <igor-sverdlov@mail.ru>'
 build_requires:
+  QBit::Application: 0
   Test::Deep: 0
   Test::More: 0
   lib::abs: 0
@@ -23,4 +24,4 @@ requires:
   QBit::Application::Model::DB: 0
   base: 0
   qbit: 0
-version: 0.004
+version: 0.005
