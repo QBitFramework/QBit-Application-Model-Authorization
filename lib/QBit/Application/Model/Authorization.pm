@@ -22,6 +22,7 @@ use base qw(QBit::Application::Model);
 
 use Digest::SHA qw(sha512_hex);
 use Crypt::CBC;
+use Crypt::Blowfish;
 
 my $SALT;
 
