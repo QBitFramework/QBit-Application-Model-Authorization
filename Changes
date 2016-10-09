@@ -3,8 +3,46 @@ Changes from 2015-10-10 00:00:00 +0000 to present.
 ==================================================
 
 ------------------------------------------
-version 0.005 at 2016-10-09 11:29:06 +0000
+version 0.006 at 2016-10-09 12:28:55 +0000
 ------------------------------------------
+
+  Change: 247659e94af4b73dd93d752042eb34f2d8fc6b8e
+  Author: Igor <igor-sverdlov@mail.ru>
+  Date : 2016-10-09 16:28:06 +0000
+
+    Merge pull request #4 from QBitFramework/test_time_log
+
+    Test time log 
+
+  Change: 0a6ad9bcd6c09bab84a2b9c5877eb3677841a789
+  Author: Igor <igor-sverdlov@mail.ru>
+  Date : 2016-10-09 16:22:35 +0000
+
+    Merge pull request #3 from QBitFramework/use_crypt_blowfish
+
+    use Crypt::Blowfish 
+
+  Change: fd8cfb71d8d237486fa026655bf9090ec6f11b70
+  Author: Igor Sverdlov <igor-sverdlov@mail.ru>
+  Date : 2016-10-09 15:20:22 +0000
+
+    use Crypt::Blowfish 
+
+  Change: 1ff342a30e10b7adc9f229b23844010fe99c8e27
+  Author: Igor Sverdlov <igor-sverdlov@mail.ru>
+  Date : 2016-10-09 15:16:24 +0000
+
+    added TestTimeLog for tests 
+
+------------------------------------------
+version 0.005 at 2016-10-09 11:29:15 +0000
+------------------------------------------
+
+  Change: 2a709dce5dfc2872965fcaecd3578f1d54ca561f
+  Author: Igor Sverdlov <igor-sverdlov@mail.ru>
+  Date : 2016-10-09 14:29:15 +0000
+
+    Version 0.005 
 
   Change: 49dcbe925ffab10d937e939412911f01174a07d2
   Author: Igor <igor-sverdlov@mail.ru>

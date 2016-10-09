@@ -16,6 +16,7 @@ my %WriteMakefileArgs = (
   "LICENSE" => "gpl",
   "NAME" => "QBit::Application::Model::Authorization",
   "PREREQ_PM" => {
+    "Crypt::Blowfish" => 0,
     "Crypt::CBC" => 0,
     "Digest::SHA" => 0,
     "Exception" => 0,
@@ -26,11 +27,12 @@ my %WriteMakefileArgs = (
   },
   "TEST_REQUIRES" => {
     "QBit::Application" => 0,
+    "QBit::Class" => 0,
     "Test::Deep" => 0,
     "Test::More" => 0,
     "lib::abs" => 0
   },
-  "VERSION" => "0.005",
+  "VERSION" => "0.006",
   "test" => {
     "TESTS" => "t/*.t"
   }
@@ -38,12 +40,14 @@ my %WriteMakefileArgs = (
 
 
 my %FallbackPrereqs = (
+  "Crypt::Blowfish" => 0,
   "Crypt::CBC" => 0,
   "Digest::SHA" => 0,
   "Exception" => 0,
   "QBit::Application" => 0,
   "QBit::Application::Model" => 0,
   "QBit::Application::Model::DB" => 0,
+  "QBit::Class" => 0,
   "Test::Deep" => 0,
   "Test::More" => 0,
   "base" => 0,

@@ -1,3 +1,11 @@
+libqbit-application-model-authorization-perl (0.006) raring; urgency=low
+
+  * use Crypt::Blowfish
+
+  * added TestTimeLog for tests
+
+ -- Igor Sverdlov <igor-sverdlov@mail.ru>  Sun, 09 Oct 2016 15:28:55 +0300
+
 libqbit-application-model-authorization-perl (0.005) raring; urgency=low
 
   * t_lib -> /t/lib

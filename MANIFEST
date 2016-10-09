@@ -15,8 +15,10 @@ debian/rules
 dist.ini
 lib/QBit/Application/Model/Authorization.pm
 lib/QBit/Application/Model/DB/Authorization.pm
+t/lib/TestApplication.cfg
 t/lib/TestApplication.pm
 t/lib/TestApplication/Model/DB.pm
 t/lib/TestApplication/Model/Request.pm
 t/lib/TestApplication/Model/Response.pm
+t/lib/TestTimeLog.pm
 t/qbit-application-model-authorization.t
