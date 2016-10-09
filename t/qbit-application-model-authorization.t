@@ -5,7 +5,7 @@ use Test::Deep;
 
 use qbit;
 
-use lib::abs qw(../lib ../t_lib);
+use lib::abs qw(../lib ./lib);
 
 require_ok 'TestApplication';
 
