@@ -67,8 +67,9 @@ sub _get_session {
     my $session = {key => $key, session_hash => $self->_session_hash($key, $password_hash)};
 
     my $cipher = Crypt::CBC->new(
-        -key    => $SALT,
-        -cipher => 'Blowfish'
+        -keysize => 16,
+        -key     => $SALT,
+        -cipher  => 'Blowfish'
     );
 
     return $cipher->encrypt(to_json($session));
@@ -107,8 +108,9 @@ sub check_session {
     my ($self, $session) = @_;
 
     my $cipher = Crypt::CBC->new(
-        -key    => $SALT,
-        -cipher => 'Blowfish'
+        -keysize => 16,
+        -key     => $SALT,
+        -cipher  => 'Blowfish'
     );
 
     try {
