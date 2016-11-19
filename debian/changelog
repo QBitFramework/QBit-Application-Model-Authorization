@@ -1,3 +1,9 @@
+libqbit-application-model-authorization-perl (0.007) raring; urgency=low
+
+  * change keysize
+
+ -- Igor Sverdlov <igor-sverdlov@mail.ru>  Sat, 19 Nov 2016 16:15:06 +0300
+
 libqbit-application-model-authorization-perl (0.006) raring; urgency=low
 
   * use Crypt::Blowfish
